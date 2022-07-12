@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-07-10T02:23:21.450103+00:00",
+  "timestamp": "2022-07-12T02:23:04.378269+00:00",
   "repo": "DavidSchinazi/draft-schinazi-connect-udp-listen",
   "labels": [
     {
@@ -49,6 +49,23 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOHnqa9M5NkapI",
+      "title": "multicast?",
+      "url": "https://github.com/DavidSchinazi/draft-schinazi-connect-udp-listen/issues/1",
+      "state": "OPEN",
+      "author": "LPardue",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "The first time I heard the title the thought that crossed my mind was that it could be used to support more modes of UDP usage that focus on listening - such as multicast reception.\r\n\r\nHowever, when I look at the draft, the interaction model doesn't really fit the multicast subscribe/join model. (I can think of ways to do that but I won't waste your time here).\r\n\r\nAssuming you want to keep the document scope and design as is, I might suggest a tweak to the document title that more closely matches that definition. Maybe something like \"UDP socket multiplexing over single HTTP requests\" :bike::shed\"\r\n\r\n",
+      "createdAt": "2022-07-12T00:39:23Z",
+      "updatedAt": "2022-07-12T00:40:06Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": []
 }
