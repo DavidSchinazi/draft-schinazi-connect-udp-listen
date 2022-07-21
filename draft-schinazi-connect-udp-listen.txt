@@ -4,8 +4,8 @@
 
 MASQUE                                                       D. Schinazi
 Internet-Draft                                                Google LLC
-Intended status: Standards Track                             7 July 2022
-Expires: 8 January 2023
+Intended status: Standards Track                            21 July 2022
+Expires: 22 January 2023
 
 
                      Proxying Listener UDP in HTTP
@@ -51,7 +51,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 8 January 2023.
+   This Internet-Draft will expire on 22 January 2023.
 
 Copyright Notice
 
@@ -158,10 +158,11 @@ Table of Contents
       proxy.  This field has length 32 bits when the previous IP Version
       field value is 4, and 128 when the IP Version is 6.
 
-   UDP Port:  The UDP Port of this proxied UDP packet.  When sent from
-      client to proxy, this is target port that the proxy will send this
-      UDP payload to.  When sent from proxy to client, this represents
-      the source UDP port of the UDP packet received by the proxy.
+   UDP Port:  The UDP Port of this proxied UDP packet in network byte
+      order.  When sent from client to proxy, this is target port that
+      the proxy will send this UDP payload to.  When sent from proxy to
+      client, this represents the source UDP port of the UDP packet
+      received by the proxy.
 
    UDP Payload:  The unmodified UDP Payload of this proxied UDP packet
       (referred to as "data octets" in [UDP]).
@@ -245,9 +246,9 @@ Table of Contents
               Pauly, T., Schinazi, D., Chernyakhovsky, A., Kuehlewind,
               M., and M. Westerlund, "IP Proxying Support for HTTP",
               Work in Progress, Internet-Draft, draft-ietf-masque-
-              connect-ip-01, 4 March 2022,
+              connect-ip-02, 11 July 2022,
               <https://datatracker.ietf.org/doc/html/draft-ietf-masque-
-              connect-ip-01>.
+              connect-ip-02>.
 
    [ICE]      Keranen, A., Holmberg, C., and J. Rosenberg, "Interactive
               Connectivity Establishment (ICE): A Protocol for Network
